@@ -1,6 +1,6 @@
 # devefest_stories
 
-A new Flutter project.
+A Flutter App that let's DeveFest Sousse 2021 event attenders to share memories with the community.
 
 ## Getting Started
 
