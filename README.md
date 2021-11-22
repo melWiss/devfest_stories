@@ -16,11 +16,56 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## TO-DO
-* Complete Firebase Configuration on Android and the Web
-* Create UIs
-* Create Models
-* Add non-Firebase Functionalities
-* Add Firebase Client Functionalities
-* Add Firebase Backend Functionalities
+
+### Complete Firebase Configuration on Android and the Web
+    [ ] Create Firebase App on the console
+    [ ] Add Web app configuration
+    [ ] Add Android app configuration
+    [ ] Add firebase .js file that contains codes for the push notifications
+### Create UIs
+    [ ] Authentication Screen
+    [ ] Home Screen
+        [ ] Stories Widget
+        [ ] Notifications Widget
+        [ ] Profile Widget
+        [ ] Settings and About Widget
+### Create Models
+    [ ] User Model
+    [ ] Story Model
+    [ ] Notification Model
+    [ ] Settings Model
+### Add non-Firebase Functionalities
+    [ ] Image Picker function
+    [ ] Image Compression function
+    [ ] Settings Functions
+        [ ] Change Language
+        [ ] Font Changer
+        [ ] Light/Dark Theme Switcher
+        [ ] Show About
+### Add Firebase Client Functionalities
+    [ ] User Functions
+        [ ] User Creation
+        [ ] User Fetching
+    [ ] Story Functions
+        [ ] Story Creation
+            [ ] Add Story description
+            [ ] Upload Story Image
+        [ ] Story Reaction (add like button)
+            [ ] Add/Remove like
+        [ ] Story Comments
+            [ ] Create Comments
+            [ ] Fetch Comments
+            [ ] Delete Comments
+    [ ] Notification Functions
+        [ ] Fetch Notifications
+        [ ] Register User to a Story Comments
+        [ ] Register User to his own story for likes and comments
+        [ ] Register a Notification Listener and show notifications
+        [ ] Send Notification
+### Add Firebase Backend Functionalities
+    [ ] Create a NodeJS Firebase Admin App
+    [ ] Add Sending Notifications functionalities
+    [ ] Notify User for a subscribed story updates
+    [ ] Deploy to heroku
 
 
