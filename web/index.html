@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -29,6 +30,7 @@
   <title>devefest_stories</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
@@ -39,21 +41,20 @@
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
   <script>
-  // grab the configuration from the firebase console
-      var firebaseConfig = {
-        apiKey: "...",
-        authDomain: "[YOUR_PROJECT].firebaseapp.com",
-        databaseURL: "https://[YOUR_PROJECT].firebaseio.com",
-        projectId: "[YOUR_PROJECT]",
-        storageBucket: "[YOUR_PROJECT].appspot.com",
-        messagingSenderId: "...",
-        appId: "1:...:web:...",
-        measurementId: "G-...",
-      };
+    // grab the configuration from the firebase console
+    const firebaseConfig = {
+      apiKey: "AIzaSyBWLGt6hw16lsHDTLPsNLExjOwykNH8raw",
+      authDomain: "devfeststories.firebaseapp.com",
+      projectId: "devfeststories",
+      storageBucket: "devfeststories.appspot.com",
+      messagingSenderId: "785357741741",
+      appId: "1:785357741741:web:04e10f79ea2fb9627d7024",
+      measurementId: "G-72YRRWZWVH"
+    };
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -74,6 +75,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
         var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
@@ -119,4 +121,5 @@
     }
   </script>
 </body>
+
 </html>

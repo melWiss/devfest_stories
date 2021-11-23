@@ -19,10 +19,10 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Complete Firebase Configuration on Android and the Web
 
-- [ ] Create Firebase App on the console
-- [ ] Add Web app configuration
-- [ ] Add Android app configuration
-- [ ] Add firebase .js file that contains codes for the push notifications
+- [x] Create Firebase App on the console
+- [x] Add Web app configuration
+- [x] Add Android app configuration
+- [x] Add firebase .js file that contains codes for the push notifications
 
 ### Create UIs
 

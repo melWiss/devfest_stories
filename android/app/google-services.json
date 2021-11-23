@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "785357741741",
+    "project_id": "devfeststories",
+    "storage_bucket": "devfeststories.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785357741741:android:df892524b4157d5b7d7024",
+        "android_client_info": {
+          "package_name": "com.elwiss.devfest_stories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785357741741-7i3j0eerioein6f5md8lg2ob1e569nq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elwiss.devfest_stories",
+            "certificate_hash": "0a541cc2ff8af23566a5f17b4922e37eeba2007b"
+          }
+        },
+        {
+          "client_id": "785357741741-sbbo9gsrh9g0qs27j30nd6ffsfg570ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDknjV9N2gL3CCDCFVTbWoIItWUyyplcMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785357741741-sbbo9gsrh9g0qs27j30nd6ffsfg570ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
