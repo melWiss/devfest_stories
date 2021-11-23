@@ -1,6 +1,6 @@
-import 'package:devefest_stories/src/views/notifications.dart';
-import 'package:devefest_stories/src/views/profile.dart';
-import 'package:devefest_stories/src/views/stories.dart';
+import 'package:devfest_stories/src/views/notifications.dart';
+import 'package:devfest_stories/src/views/profile.dart';
+import 'package:devfest_stories/src/views/stories.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

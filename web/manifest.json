@@ -1,6 +1,6 @@
 {
-    "name": "devefest_stories",
-    "short_name": "devefest_stories",
+    "name": "devfest_stories",
+    "short_name": "devfest_stories",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

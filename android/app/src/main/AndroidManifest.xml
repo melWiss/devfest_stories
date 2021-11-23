@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.elwiss.devefest_stories">
+    package="com.elwiss.devfest_stories">
    <application
-        android:label="devefest_stories"
+        android:label="devfest_stories"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">
         <activity

@@ -1,4 +1,4 @@
-import 'package:devefest_stories/src/views/home.dart';
+import 'package:devfest_stories/src/views/home.dart';
 import 'package:flutter/material.dart';
 
 class AuthenticationScreen extends StatelessWidget {

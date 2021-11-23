@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "devefest_stories")
-set(APPLICATION_ID "com.elwiss.devefest_stories")
+set(BINARY_NAME "devfest_stories")
+set(APPLICATION_ID "com.elwiss.devfest_stories")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -1,4 +1,6 @@
+import 'package:devfest_stories/src/models/user.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class StoriesWidget extends StatelessWidget {
   const StoriesWidget({Key? key}) : super(key: key);
@@ -13,14 +15,10 @@ class StoriesWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            FlutterLogo(
-              size: 175,
-            ),
-            OutlinedButton(
-              onPressed: () {},
-              child: const Text(
-                "Sign in with Google",
-              ),
+            SvgPicture.network(
+              user.imgUrl,
+              height: 200,
+              width: 200,
             ),
           ],
         ),

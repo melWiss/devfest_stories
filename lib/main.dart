@@ -1,4 +1,4 @@
-import 'package:devefest_stories/src/views/authentication.dart';
+import 'package:devfest_stories/src/views/authentication.dart';
 import 'package:flutter/material.dart';
 
 void main() {

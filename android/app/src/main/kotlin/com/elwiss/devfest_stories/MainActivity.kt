@@ -1,4 +1,4 @@
-package com.elwiss.devefest_stories
+package com.elwiss.devfest_stories
 
 import io.flutter.embedding.android.FlutterActivity
 
