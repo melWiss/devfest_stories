@@ -26,27 +26,27 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Create UIs
 
-- [ ] Authentication Screen
-- [ ] Home Screen
-    - [ ] Stories Widget
-        - [ ] Create a Story Widget
-        - [ ] Show Story details Widget
+- [x] Authentication Screen
+- [-] Home Screen
+    - [x] Stories Widget
+        - [x] Create a Story Widget
+        - [x] Show Story details Widget
     - [ ] Notifications Widget
-    - [ ] Profile Widget
-    - [ ] Settings and About Widget
+    - [x] Profile Widget
+    - [x] Settings and About Widget
 
 ### Create Models
 
-- [ ] User Model
-- [ ] Story Model
-- [ ] Notification Model
+- [x] User Model
+- [x] Story Model
+- [x] Notification Model
 - [ ] Settings Model
 
 ### Add non-Firebase Functionalities
 
-- [ ] Image Picker function
-- [ ] Image Compression function
-- [ ] Settings Functions
+- [x] Image Picker function
+- [x] Image Compression function
+- [-] Settings Functions
     - [ ] Change Language
     - [ ] Font Changer
     - [ ] Light/Dark Theme Switcher
