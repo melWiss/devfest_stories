@@ -22,10 +22,11 @@ class AuthenticationScreen extends StatelessWidget {
                 "Sign in with Google",
               ),
               onPressed: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushAndRemoveUntil(
                   MaterialPageRoute(
                     builder: (context) => HomeScreen(),
                   ),
+                  (r) => false,
                 );
               },
             ),

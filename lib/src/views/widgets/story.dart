@@ -1,9 +1,16 @@
+import 'dart:io';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:date_format/date_format.dart';
 import 'package:devfest_stories/src/models/story.dart';
 import 'package:devfest_stories/src/models/user.dart';
+import 'package:devfest_stories/src/views/create_story.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
 
 class StoryWidget extends StatelessWidget {
   const StoryWidget({
@@ -128,7 +135,26 @@ class StoryWidget extends StatelessWidget {
                         color: Colors.black,
                         size: 30,
                       ),
-                      onPressed: () {},
+                      onPressed: () async {
+                        var picker = ImagePicker();
+                        var picked =
+                            await picker.pickImage(source: ImageSource.camera);
+                        if (picked != null) {
+                          var f = File(join(
+                              (await getTemporaryDirectory()).path,
+                              DateTime.now().millisecondsSinceEpoch.toString() +
+                                  ".jpg"));
+                          f.writeAsBytesSync(await picked.readAsBytes());
+                          var result =
+                              await FlutterImageCompress.compressAndGetFile(
+                                  f.path, f.path + ".jpg");
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CreateStoryScreen(
+                              image: result!,
+                            ),
+                          ));
+                        }
+                      },
                     ),
                   ),
                 ),

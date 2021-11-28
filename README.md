@@ -28,9 +28,9 @@ samples, guidance on mobile development, and a full API reference.
 
 - [ ] Authentication Screen
 - [ ] Home Screen
-    - [ ] Stories Widget
-        - [ ] Create a Story Widget
-        - [ ] Show Story details Widget
+    - [x] Stories Widget
+        - [x] Create a Story Widget
+        - [x] Show Story details Widget
     - [ ] Notifications Widget
     - [ ] Profile Widget
     - [ ] Settings and About Widget
