@@ -1,7 +1,9 @@
+import 'package:devfest_stories/constants/assets.dart';
 import 'package:devfest_stories/src/views/notifications.dart';
 import 'package:devfest_stories/src/views/profile.dart';
 import 'package:devfest_stories/src/views/stories.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -29,8 +31,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Home",
+          "Devfest Stories",
           style: TextStyle(color: Colors.black),
+        ),
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: SvgPicture.asset(Assets.assetsLogo),
         ),
         backgroundColor: Colors.white,
         elevation: 0,

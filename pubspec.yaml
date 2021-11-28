@@ -46,6 +46,7 @@ dependencies:
   date_format: ^2.0.4
   path: ^1.8.0
   path_provider: ^2.0.7
+  url_launcher: ^6.0.15
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -67,6 +68,11 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/constants/
+  filename: assets.dart
+
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -75,8 +81,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

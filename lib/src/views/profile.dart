@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:devfest_stories/src/models/story.dart';
 import 'package:devfest_stories/src/models/user.dart';
+import 'package:devfest_stories/src/views/settings.dart';
 import 'package:devfest_stories/src/views/widgets/story.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -108,9 +109,15 @@ class ProfileWidget extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
         label: Text("Settings"),
         icon: Icon(Icons.settings),
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) {
+              return SettingsWidget();
+            },
+          ));
+        },
       ),
     );
   }

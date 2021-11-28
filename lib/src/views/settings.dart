@@ -1,3 +1,4 @@
+import 'package:devfest_stories/src/views/about.dart';
 import 'package:flutter/material.dart';
 
 class SettingsWidget extends StatelessWidget {
@@ -6,21 +7,37 @@ class SettingsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Settings"),
+      ),
       body: ConstrainedBox(
         constraints:
             BoxConstraints(minWidth: MediaQuery.of(context).size.width),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            FlutterLogo(
-              size: 175,
+            ListTile(
+              title: Text("About"),
+              leading: Icon(Icons.help),
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return const AboutScreen();
+                  },
+                ));
+              },
             ),
-            OutlinedButton(
-              onPressed: () {},
-              child: const Text(
-                "Sign in with Google",
-              ),
+            Divider(
+              height: 0,
+            ),
+            ListTile(
+              title: Text("Log out"),
+              leading: Icon(Icons.logout),
+              onTap: () {},
+            ),
+            Divider(
+              height: 0,
             ),
           ],
         ),

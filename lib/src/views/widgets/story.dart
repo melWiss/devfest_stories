@@ -184,7 +184,20 @@ class StoryWidget extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "${user.fullName} @ ${formatDate(story.date!, [
+                                "${user.fullName}",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline6!
+                                    .copyWith(color: Colors.white),
+                              ),
+                              Text(
+                                "@ ${formatDate(story.date!, [
+                                      yyyy,
+                                      ' ',
+                                      M,
+                                      ' ',
+                                      d,
+                                      ', ',
                                       H,
                                       ':',
                                       nn
