@@ -33,7 +33,7 @@ samples, guidance on mobile development, and a full API reference.
         - [x] Show Story details Widget
     - [ ] Notifications Widget
     - [x] Profile Widget
-    - [ ] Settings and About Widget
+    - [x] Settings and About Widget
 
 ### Create Models
 
@@ -46,7 +46,7 @@ samples, guidance on mobile development, and a full API reference.
 
 - [x] Image Picker function
 - [x] Image Compression function
-- [ ] Settings Functions
+- [-] Settings Functions
     - [ ] Change Language
     - [ ] Font Changer
     - [ ] Light/Dark Theme Switcher
