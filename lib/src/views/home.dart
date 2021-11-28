@@ -28,18 +28,30 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text(
+          "Home",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.white,
+        elevation: 0,
       ),
-      body: PageView(
-        controller: controller,
-        onPageChanged: (value) => setState(() {
-          index = value;
-        }),
-        children: const [
-          StoriesWidget(),
-          NotificationsWidget(),
-          ProfileWidget(),
-        ],
+      backgroundColor: Colors.white,
+      body: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(20),
+          topRight: Radius.circular(20),
+        ),
+        child: PageView(
+          controller: controller,
+          onPageChanged: (value) => setState(() {
+            index = value;
+          }),
+          children: const [
+            StoriesWidget(),
+            // NotificationsWidget(),
+            ProfileWidget(),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
@@ -62,15 +74,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             label: "Stories",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.notifications,
-            ),
-            activeIcon: Icon(
-              Icons.notifications_active,
-            ),
-            label: "Notifications",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(
+          //     Icons.notifications,
+          //   ),
+          //   activeIcon: Icon(
+          //     Icons.notifications_active,
+          //   ),
+          //   label: "Notifications",
+          // ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_outline,

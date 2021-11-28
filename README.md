@@ -37,9 +37,9 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Create Models
 
-- [ ] User Model
-- [ ] Story Model
-- [ ] Notification Model
+- [x] User Model
+- [x] Story Model
+- [x] Notification Model
 - [ ] Settings Model
 
 ### Add non-Firebase Functionalities
