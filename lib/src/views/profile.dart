@@ -108,16 +108,19 @@ class ProfileWidget extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
-      floatingActionButton: FloatingActionButton.extended(
-        label: Text("Settings"),
-        icon: Icon(Icons.settings),
-        onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) {
-              return SettingsWidget();
-            },
-          ));
-        },
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: FloatingActionButton.extended(
+          label: Text("Settings"),
+          icon: Icon(Icons.settings),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) {
+                return SettingsWidget();
+              },
+            ));
+          },
+        ),
       ),
     );
   }

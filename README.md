@@ -26,7 +26,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Create UIs
 
-- [ ] Authentication Screen
+- [x] Authentication Screen
 - [-] Home Screen
     - [x] Stories Widget
         - [x] Create a Story Widget

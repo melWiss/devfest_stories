@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Devfest Stories',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: const TextTheme(
@@ -39,6 +39,24 @@ class MyApp extends StatelessWidget {
             // fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
+        ),
+        canvasColor: Colors.white,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            primary: Colors.yellow,
+          ),
+        ),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          elevation: 0,
+        ),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.blue,
         ),
       ),
       home: const AuthenticationScreen(),
