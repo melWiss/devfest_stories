@@ -27,12 +27,12 @@ samples, guidance on mobile development, and a full API reference.
 ### Create UIs
 
 - [ ] Authentication Screen
-- [ ] Home Screen
+- [-] Home Screen
     - [x] Stories Widget
         - [x] Create a Story Widget
         - [x] Show Story details Widget
     - [ ] Notifications Widget
-    - [ ] Profile Widget
+    - [x] Profile Widget
     - [ ] Settings and About Widget
 
 ### Create Models
@@ -44,8 +44,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Add non-Firebase Functionalities
 
-- [ ] Image Picker function
-- [ ] Image Compression function
+- [x] Image Picker function
+- [x] Image Compression function
 - [ ] Settings Functions
     - [ ] Change Language
     - [ ] Font Changer
